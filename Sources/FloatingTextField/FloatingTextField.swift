@@ -167,7 +167,7 @@ public struct FloatingTextField<Content: View>: View {
             border(),
             alignment: style.border.alignment()
         )
-        .onChange(of: text) { _, _ in
+        .onChange(of: text) { _ in
             withAnimation(animation) {
                 calculateOffsets()
             }
